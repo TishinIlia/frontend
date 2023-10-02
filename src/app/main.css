@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --constant-black: #262a2f;
+    --constant-white: #fff;
+    --background: #fff;
+    --foreground: #262a2f;
+    --primary: #1796ff;
+    --secondary: #f97316;
+    --border: var(--background);
+    --input: var(--foreground);
+    --ring: var(--secondary);
+    --destructive: #f53;
+    --radius: 0rem;
+    --inner-focus-border: 0 0 0 4px var(--secondary) inset;
+  }
+
+  .dark {
+    --background: #262a2f;
+    --foreground: #fff;
+  }
+
+  html {
+    font-family: Rubik, system-ui, sans-serif;
+  }
+
+  #root {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+  }
+}
