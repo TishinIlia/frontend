@@ -1,0 +1,41 @@
+{
+  "extends": ["eslint:recommended", "prettier", "plugin:import/typescript"],
+  "plugins": ["prettier", "import"],
+  "env": {
+    "node": true
+  },
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {},
+      {
+        "usePrettierrc": true
+      }
+    ],
+    "no-console": "warn"
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "paths": "<root>/tsconfig.json",
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "overrides": [
+    {
+      "files": ["jest-setup.ts"],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}
