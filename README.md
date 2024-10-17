@@ -1,7 +1,3 @@
-# R-Zero Full Stack Developer Technical Test
-
-This repo contains a frontend application for the challenge.
-
 ## Tech stack
 
 - Frontend
